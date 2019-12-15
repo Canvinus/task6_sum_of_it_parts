@@ -16,7 +16,7 @@ void load_definitions(const char* filename)
 	ifstream inf(filename);
 	string part, subpart;
 	int quantity;
-	
+
 	while ( inf.good() ) 
     {
 		inf >> part >> quantity >> subpart;
@@ -70,7 +70,7 @@ void process_queries(const char* filename)
 
 int main(void) 
 {
-	load_definitions("definitions.txt");
-	process_queries("queries.txt");
+	load_definitions("../../src/definitions.txt");
+	process_queries("../../src/queries.txt");
 	return EXIT_SUCCESS;
 }
